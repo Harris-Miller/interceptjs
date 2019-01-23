@@ -1,7 +1,7 @@
 {
   "name": "intercept",
   "version": "0.1.0",
-  "description": "GUI tool to intercept fetch calls and return what you want",
+  "description": "devtools extension to intercept fetch calls and return what you want",
   "private": true,
   "author": "Harris Miller <harrismillerconsulting@gmail.com>",
   "license": "MIT",
