@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": [
+    "eslint-config-harris/react-recommended"
+  ],
+  "globals": {
+    "chrome": true
+  },
+  "rules": {
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "import/no-extraneous-dependencies": "off"
+  }
+}

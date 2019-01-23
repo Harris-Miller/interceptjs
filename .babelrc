@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": "last 2 Chrome versions, last 2 Firefox versions",
+      "useBuiltIns": "usage",
+      "modules": false,
+      "exclude": ["transform-typeof-symbol"]
+    }],
+    ["@babel/preset-react", {
+      "development": true,
+      "useBuiltIns": true
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-destructuring",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["@babel/plugin-proposal-object-rest-spread", { "useBuiltIns": true }]
+  ]
+}

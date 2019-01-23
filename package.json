@@ -1,0 +1,50 @@
+{
+  "name": "intercept",
+  "version": "0.1.0",
+  "description": "GUI tool to intercept fetch calls and return what you want",
+  "private": true,
+  "author": "Harris Miller <harrismillerconsulting@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all --sequential clean --parallel build:**",
+    "build:copy:assets": "cp -R src/assets dist",
+    "build:copy:manifest": "cp src/browser/extension/manifest.json dist/",
+    "build:copy:views": "cp src/browser/views/*.html dist",
+    "build:webpack": "webpack --config config/webpack.js",
+    "clean": "rimraf dist && mkdir dist",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/plugin-transform-destructuring": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "core-js": "^2.6.3",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.12.1",
+    "eslint-config-harris": "^1.7.1",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "fs-extra": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "raw-loader": "^1.0.0",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
